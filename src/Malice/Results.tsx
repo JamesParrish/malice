@@ -13,11 +13,11 @@ interface State {
 
 class Results extends React.Component<Props, State> {
     isCharmValid(charm: Charm): boolean {
-        return (this.props.action === AttackType.Decisive && (charm.appliesToDamage || charm.appliesToDisarm) ||
-            (this.props.action === AttackType.Damage && charm.appliesToDamage ||
-            (this.props.action === AttackType.Disarm && charm.appliesToDisarm ||
+        return (this.props.action === AttackType.Decisive && (charm.appliesToDamage || charm.appliesToDisarm)) ||
+            (this.props.action === AttackType.Damage && charm.appliesToDamage) ||
+            (this.props.action === AttackType.Disarm && charm.appliesToDisarm) ||
             (this.props.action === AttackType.Withering && charm.appliesToWithering) ||
-            this.props.action === AttackType.Any
+            this.props.action === AttackType.Any;
     }
 
     render() {
