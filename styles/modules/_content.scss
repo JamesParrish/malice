@@ -1,0 +1,8 @@
+.content {
+    margin: 10px;
+    padding: 5px;
+    color: map-get($page-colours, "content-text-colour");
+    background-color: map-get($page-colours, "content-background");
+    border: 1px solid map-get($page-colours, "border-colour");
+    border-radius: 30px;
+}

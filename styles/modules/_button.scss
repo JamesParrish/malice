@@ -1,0 +1,8 @@
+button {
+    margin: 10px;
+    padding: 5px 15px;
+    color: map-get($page-colours, "text-colour");
+    background-color: map-get($page-colours, "page-background");
+    border: 1px solid map-get($page-colours, "border-colour");
+    border-radius: 10px;
+}

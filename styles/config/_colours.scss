@@ -1,9 +1,17 @@
 $colours: (
-  "black": #000,
-  "white": #fff,
+  "darker-grey": #151515,
+  "dark-grey": #424242,
+  "grey": #696969,
+  "light-grey": #999999,
+  "purple": #a090d0,
 );
 
-$page-colors: (
-  "page-background": map-get($colours, "black"),
-  "page-colour": map-get($colours, "white"),
+$page-colours: (
+  "page-background": map-get($colours, "purple"),
+  "text-colour": map-get($colours, "dark-grey"),
+  "content-background": map-get($colours, "dark-grey"),
+  "content-text-colour": map-get($colours, "purple"),
+  "dark-text-colour": map-get($colours, "dark-grey"),
+  "border-colour": map-get($colours, "darker-grey"),
+  "alternate-background": map-get($colours, "darker-grey"),
 );

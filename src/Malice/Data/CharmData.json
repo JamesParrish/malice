@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "name": "Precision of the Striking Raptor",
+        "pageReference": 415,
+        "summary": "Improve accuracy at short range or greater. Reduce target's defence at close range",
+        "details": "Accuracy bonus is calculated as though attack was made from close range. If used at close range, the target's defence is lowered by 1. The usual range restrictions of your weapon apply.",
+        "appliesToWithering": true,
+        "moteCost": 1
+    },
+    {
+        "id": 2,
+        "name": "Joint-Wounding Attack",
+        "pageReference": 415,
+        "summary": "Inflict penalties on damaging decisive attacks",
+        "details": "If you deal at least 3 damage with a decisive attack your target suffers a -3 penalty to all dice pools for the rest of the scene.",
+        "appliesToDamage": true,
+        "moteCost": 3
+    },
+    {
+        "id": 3,
+        "name": "Mist-Gathering Practice",
+        "pageReference": 417,
+        "summary": "When you aim from cover or stealth, gain extra initiative on your next decisive attack",
+        "details": "Gain [Essence * 2] [Essence x 2] initiative on your next decisive attack for the purposes of determining raw damage. If you don't make a decisive attack or you miss the bonus initiative is lost.",
+        "appliesToDamage": true,
+        "moteCost": 3
+    },
+    {
+        "id": 4,
+        "name": "Iron Wolves' Grasp",
+        "pageReference": 320,
+        "summary": "Enhance disarm gambits",
+        "details": "The cost of the disarm gambit is replaced by the cost of this charm. You may attack in addition to disarming with no defence penalty. Your initiative roll gains double 9s. On success, steal the target's weapon. If it's an artifact, break the attunement and you may instantly attune.",
+        "appliesToWithering": false,
+        "appliesToDamage": false,
+        "appliesToDisarm": true,
+        "moteCost": 3,
+        "initiativeCost": 4
+    },
+    {
+        "id": 5,
+        "name": "Fists of Iron Technique",
+        "pageReference": 273,
+        "summary": "May parry unarmed",
+        "details": "You may parry lethal damage with your bare hands",
+        "appliesToDefence": true,
+        "moteCost": 1
+    },
+    {
+        "id": 6,
+        "name": "Fists of Iron Technique",
+        "pageReference": 273,
+        "summary": "Strike for lethal damage",
+        "details": "Your unarmed decisive attacks deal lethal damage",
+        "appliesToDamage": true,
+        "moteCost": 1
+    },
+    {
+        "id": 7,
+        "name": "Fists of Iron Technique",
+        "pageReference": 273,
+        "summary": "Ignore enemy soak",
+        "details": "Ignore [Essence + Intimacy] enemy soak. Minor intimacies ignore 2 soak, major ignore 3 and defining ignore 4.",
+        "appliesToWithering": true,
+        "moteCost": 1
+    },
+    {
+        "id": 8,
+        "name": "Ferocious Jab",
+        "pageReference": 274,
+        "summary": "Deal extra onslaught damage",
+        "details": "Add dice to the damage of a withering or decisive attack equal to the target's onslaught penalty",
+        "appliesToWithering": true,
+        "appliesToDamage": true,
+        "moteCost": 1
+    }
+]

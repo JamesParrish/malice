@@ -1,9 +1,12 @@
 // https://alligator.io/css/minimal-css-reset/
+html, button {
+    font-size: 28px;
+}
+
 html {
     box-sizing: border-box;
-    font-size: 16px;
     overflow-y: scroll;
-    -webkit-tap-highlight-color: rgba(map-get($page-colors, "page-colour"), 0);
+    -webkit-tap-highlight-color: rgba(map-get($page-colours, "text-colour"), 0);
 }
 
 *,
