@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Charm } from './Models/Charm';
 import ResultRow from './ResultRow'
-import { AttackType } from './AttackType'
+import { ActionType } from './ActionType'
 
 interface Props {
     charms: Charm[];
-    action: AttackType;
+    action: ActionType;
 }
 
 interface State {
@@ -13,11 +13,13 @@ interface State {
 
 class Results extends React.Component<Props, State> {
     isCharmValid(charm: Charm): boolean {
-        return (this.props.action === AttackType.Decisive && (charm.appliesToDamage || charm.appliesToDisarm)) ||
-            (this.props.action === AttackType.Damage && charm.appliesToDamage) ||
-            (this.props.action === AttackType.Disarm && charm.appliesToDisarm) ||
-            (this.props.action === AttackType.Withering && charm.appliesToWithering) ||
-            this.props.action === AttackType.Any;
+        return (this.props.action === ActionType.Attack && (charm.appliesToDamage || charm.appliesToDisarm || charm.appliesToWithering)) ||
+            (this.props.action === ActionType.Decisive && (charm.appliesToDamage || charm.appliesToDisarm)) ||
+            (this.props.action === ActionType.Damage && charm.appliesToDamage) ||
+            (this.props.action === ActionType.Disarm && charm.appliesToDisarm) ||
+            (this.props.action === ActionType.Withering && charm.appliesToWithering) ||
+            (this.props.action === ActionType.Dodge && charm.appliesToDodge) ||
+            this.props.action === ActionType.Any;
     }
 
     render() {

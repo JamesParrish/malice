@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AttackType } from '../AttackType';
+import { ActionType } from '../ActionType';
 
 interface Props {
     setAction: Function;
@@ -11,10 +11,10 @@ interface State {
 class DecisivePicker extends React.Component<Props, State> {
     render() {
       return (
-        <div className="centralise">
-            <button onClick={e => this.props.setAction(AttackType.Damage)}>I want to hurt someone</button>
-            <button onClick={e => this.props.setAction(AttackType.Disarm)}>I want to disarm someone</button>
-            <button onClick={e => this.props.setAction(AttackType.Decisive)}>I want to see all decisive charms</button>
+        <div className="text-align-centre">
+            <button onClick={e => this.props.setAction(ActionType.Damage)}>I want to hurt someone</button>
+            <button onClick={e => this.props.setAction(ActionType.Disarm)}>I want to disarm someone</button>
+            <button onClick={e => this.props.setAction(ActionType.Decisive)}>I want to see all decisive charms</button>
         </div>
       );
     }

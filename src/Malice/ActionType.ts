@@ -2,10 +2,12 @@
 // const decisive: string = "Decisive";
 // const disarm: string = "Disarm";
 // const any: string = "";
-export enum AttackType {
+export enum ActionType {
+    Attack,
     Withering,
     Decisive,
     Damage,
     Disarm,
-    Any
+    Dodge,
+    Any,
 }

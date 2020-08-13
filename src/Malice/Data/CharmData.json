@@ -2,6 +2,8 @@
     {
         "id": 1,
         "name": "Precision of the Striking Raptor",
+        "ability": "Thrown",
+        "type": "Supplemental",
         "pageReference": 415,
         "summary": "Improve accuracy at short range or greater. Reduce target's defence at close range",
         "details": "Accuracy bonus is calculated as though attack was made from close range. If used at close range, the target's defence is lowered by 1. The usual range restrictions of your weapon apply.",
@@ -11,6 +13,8 @@
     {
         "id": 2,
         "name": "Joint-Wounding Attack",
+        "ability": "Thrown",
+        "type": "Supplemental",
         "pageReference": 415,
         "summary": "Inflict penalties on damaging decisive attacks",
         "details": "If you deal at least 3 damage with a decisive attack your target suffers a -3 penalty to all dice pools for the rest of the scene.",
@@ -20,6 +24,8 @@
     {
         "id": 3,
         "name": "Mist-Gathering Practice",
+        "ability": "Thrown",
+        "type": "Reflexive",
         "pageReference": 417,
         "summary": "When you aim from cover or stealth, gain extra initiative on your next decisive attack",
         "details": "Gain [Essence * 2] [Essence x 2] initiative on your next decisive attack for the purposes of determining raw damage. If you don't make a decisive attack or you miss the bonus initiative is lost.",
@@ -29,6 +35,8 @@
     {
         "id": 4,
         "name": "Iron Wolves' Grasp",
+        "ability": "Larceny",
+        "type": "Supplemental",
         "pageReference": 320,
         "summary": "Enhance disarm gambits",
         "details": "The cost of the disarm gambit is replaced by the cost of this charm. You may attack in addition to disarming with no defence penalty. Your initiative roll gains double 9s. On success, steal the target's weapon. If it's an artifact, break the attunement and you may instantly attune.",
@@ -41,6 +49,8 @@
     {
         "id": 5,
         "name": "Fists of Iron Technique",
+        "ability": "Brawl",
+        "type": "Reflexive",
         "pageReference": 273,
         "summary": "May parry unarmed",
         "details": "You may parry lethal damage with your bare hands",
@@ -50,6 +60,8 @@
     {
         "id": 6,
         "name": "Fists of Iron Technique",
+        "ability": "Brawl",
+        "type": "Reflexive",
         "pageReference": 273,
         "summary": "Strike for lethal damage",
         "details": "Your unarmed decisive attacks deal lethal damage",
@@ -59,6 +71,8 @@
     {
         "id": 7,
         "name": "Fists of Iron Technique",
+        "ability": "Brawl",
+        "type": "Reflexive",
         "pageReference": 273,
         "summary": "Ignore enemy soak",
         "details": "Ignore [Essence + Intimacy] enemy soak. Minor intimacies ignore 2 soak, major ignore 3 and defining ignore 4.",
@@ -68,11 +82,60 @@
     {
         "id": 8,
         "name": "Ferocious Jab",
+        "ability": "Brawl",
+        "type": "Supplemental",
         "pageReference": 274,
         "summary": "Deal extra onslaught damage",
         "details": "Add dice to the damage of a withering or decisive attack equal to the target's onslaught penalty",
         "appliesToWithering": true,
         "appliesToDamage": true,
         "moteCost": 1
+    },
+    {
+        "id": 9,
+        "name": "Reed in the Wind",
+        "ability": "Dodge",
+        "type": "Reflexive",
+        "pageReference": 299,
+        "summary": "Spend initiative (before an attack roll) to increase evasion",
+        "details": "Increase evasion by spending 2 initiative per point, up to a maximum of [Essence]",
+        "appliesToDodge": true,
+        "moteCost": 0,
+        "initiativeCost": 2
+    },
+    {
+        "id": 10,
+        "name": "Drifting Leaf Elusion",
+        "ability": "Dodge",
+        "type": "Reflexive",
+        "pageReference": 300,
+        "summary": "Defender wins ties (used after attack roll)",
+        "details": "You evade any attack that has successes equal to your evasion",
+        "appliesToDodge": true,
+        "moteCost": 1
+    },
+    {
+        "id": 11,
+        "name": "Reflex Sidestep Technique",
+        "ability": "Dodge",
+        "type": "Reflexive",
+        "pageReference": 299,
+        "summary": "Never caught flat-footed",
+        "details": "Set evasion to 2 for any attack you are unaware of, and add an additional point of evasion for every 1 or 2 in the attack roll. If your evasion reaches your normal evasion in this way you may also apply other dodge charms.",
+        "appliesToDodge": true,
+        "moteCost": 5
+    },
+    {
+        "id": 12,
+        "name": "Foe Vaulting Method",
+        "ability": "Athletics",
+        "type": "Reflexive",
+        "pageReference": 299,
+        "summary": "Make sneak attack against enemy with lower initiative",
+        "details": "Target an enemy at close range and with lower initiative than you. Make [Athletics + Dexterity] check against the enemy's evasion. If succesful, make a surprise attack against them. Enemies targeted by surprise attacks have -2 defence. Can only be used once per combat, but can be reset by making a decisive attack then building initiative to 6+.",
+        "appliesToWithering": true,
+        "appliesToDamage": true,
+        "moteCost": 0,
+        "initiativeCost": 3
     }
 ]
