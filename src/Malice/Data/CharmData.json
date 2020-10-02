@@ -137,5 +137,74 @@
         "appliesToDamage": true,
         "moteCost": 0,
         "initiativeCost": 3
+    },
+    {
+        "id": 13,
+        "name": "Falling Scythe Slash",
+        "ability": "Martial Arts",
+        "type": "Reflexive",
+        "pageReference": 438,
+        "summary": "Extra damage on decisive attacks",
+        "details": "Add [strength/2] (rounded up) for calculating raw damage done by a decisive attack",
+        "appliesToDamage": true,
+        "moteCost": 5
+    },
+    {
+        "id": 14,
+        "name": "Falling Scythe Slash",
+        "ability": "Martial Arts",
+        "type": "Reflexive",
+        "pageReference": 438,
+        "summary": "Extra damage on withering attacks",
+        "details": "Double your strength rating for calculating raw damage done by a withering attack",
+        "appliesToWithering": true,
+        "moteCost": 5
+    },
+    {
+        "id": 15,
+        "name": "Revolving Crescent Defence",
+        "ability": "Martial Arts",
+        "type": "Reflexive",
+        "pageReference": 438,
+        "summary": "Bonuses to parry when attacked multiple times in the same round",
+        "details": "Negate all onslaught penalties to parry; get +1 bonus to parry for each point of onslaught penalty instead",
+        "appliesToParry": true,
+        "moteCost": 4,
+        "initiativeCost": 1
+    },
+    {
+        "id": 16,
+        "name": "Hull-Preserving Technique",
+        "ability": "Sail",
+        "type": "Reflexive",
+        "pageReference": 389,
+        "summary": "Negate damage to ship",
+        "details": "Negate all damage to ship's hull and masts. Protects any area of the ship within [Essence * 20] feet. Willpower cost not required for repeated casting (eg vs storms or hidden rocks).",
+        "appliesToShips": true,
+        "moteCost": 5,
+        "willpowerCost": 1
+    },
+    {
+        "id": 17,
+        "name": "Hull-Taming Transfusion",
+        "ability": "Sail",
+        "type": "Reflexive",
+        "pageReference": 390,
+        "summary": "Transfer ship damage to you",
+        "details": "Transfers damage from ship to yo at a rate of three health levels per level of hull damage absorbed",
+        "appliesToShips": true,
+        "moteCost": 2
+    },
+    {
+        "id": 18,
+        "name": "Blood and Salt Bondage",
+        "ability": "Sail",
+        "type": "Reflexive",
+        "pageReference": 391,
+        "summary": "Bonus health levels to all crew",
+        "details": "Each member of the crew (including you) get bonus health levels equal to the ship's hull rating. Health levels are removed (with no penalty) if the ship is damaged, and restored if it is repaired.",
+        "appliesToShips": true,
+        "moteCost": 10,
+        "willpowerCost": 1
     }
 ]

@@ -8,6 +8,7 @@ export enum ActionType {
     Decisive,
     Damage,
     Disarm,
-    Dodge,
+    Evade,
+    Ship,
     Any,
 }

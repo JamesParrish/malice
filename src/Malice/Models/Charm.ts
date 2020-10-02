@@ -10,6 +10,8 @@ export class Charm {
     appliesToDamage: boolean;
     appliesToDisarm: boolean;
     appliesToDodge: boolean;
+    appliesToParry: boolean;
+    appliesToShips: boolean;
     moteCost: number;
     willpowerCost: number;
     initiativeCost: number;

@@ -18,7 +18,8 @@ class Results extends React.Component<Props, State> {
             (this.props.action === ActionType.Damage && charm.appliesToDamage) ||
             (this.props.action === ActionType.Disarm && charm.appliesToDisarm) ||
             (this.props.action === ActionType.Withering && charm.appliesToWithering) ||
-            (this.props.action === ActionType.Dodge && charm.appliesToDodge) ||
+            (this.props.action === ActionType.Evade && (charm.appliesToDodge || charm.appliesToParry)) ||
+            (this.props.action === ActionType.Ship && charm.appliesToShips) ||
             this.props.action === ActionType.Any;
     }
 

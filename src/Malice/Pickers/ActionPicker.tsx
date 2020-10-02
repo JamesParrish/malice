@@ -13,7 +13,8 @@ class ActionPicker extends React.Component<Props, State> {
       return (
         <div className="text-align-centre">
             <button onClick={e => this.props.setAction(ActionType.Attack)}>I am attacking</button>
-            <button onClick={e => this.props.setAction(ActionType.Dodge)}>I am under attack</button>
+            <button onClick={e => this.props.setAction(ActionType.Evade)}>I am under attack</button>
+            <button onClick={e => this.props.setAction(ActionType.Ship)}>I'm on a boat</button>
             <button onClick={e => this.props.setAction(ActionType.Any)}>I want to see all charms</button>
         </div>
       );
